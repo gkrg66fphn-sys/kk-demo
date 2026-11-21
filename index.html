@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>オートクラフトクマキリ｜静岡市葵区竜南の板金塗装</title>
+<meta name="description" content="静岡市葵区竜南の車の板金塗装・キズ・ヘコミ修理 オートクラフトクマキリ">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16181d; --ink2:#2a2e36; --paper:#f6f5f2; --white:#fff;
+  --accent:#d9381e; --accent2:#f2b632; --muted:#6b7078; --line:#e2e0da;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP",sans-serif;color:var(--ink);background:var(--paper);line-height:1.8;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.en{font-family:Oswald,sans-serif;letter-spacing:.08em}
+
+/* demo notice */
+.demo{background:var(--accent2);color:var(--ink);text-align:center;font-size:12px;font-weight:700;padding:6px 16px}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(22,24,29,.95);color:#fff;backdrop-filter:blur(6px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{display:flex;flex-direction:column;line-height:1.1}
+.logo .en{font-size:20px;font-weight:700}
+.logo .en b{color:var(--accent)}
+.logo small{font-size:10px;color:#aab;letter-spacing:.1em}
+nav{display:flex;gap:24px;font-size:14px}
+nav a:hover{color:var(--accent2)}
+.hcall{background:var(--accent);padding:8px 16px;border-radius:4px;font-weight:700;font-size:14px}
+@media(max-width:760px){nav{display:none}}
+
+/* photo placeholder: real photo in images/ overrides gradient */
+.ph{background-size:cover;background-position:center;background-color:#3a3f48}
+
+/* hero */
+.hero{position:relative;color:#fff;min-height:560px;display:flex;align-items:center;overflow:hidden}
+.hero .ph{position:absolute;inset:0;
+  background-image:linear-gradient(100deg,rgba(14,15,18,.92) 0%,rgba(14,15,18,.6) 55%,rgba(14,15,18,.25) 100%),url(images/hero.jpg),
+  radial-gradient(ellipse at 75% 40%,#5a606b 0%,#262a31 60%,#15171b 100%)}
+.hero .wrap{position:relative;width:100%}
+.hero .tag{display:inline-block;border:1px solid rgba(255,255,255,.5);padding:2px 12px;font-size:13px;letter-spacing:.15em;margin-bottom:20px}
+.hero h1{font-size:clamp(34px,6vw,60px);font-weight:900;line-height:1.3;margin-bottom:20px}
+.hero h1 span{color:var(--accent2)}
+.hero p{font-size:16px;max-width:520px;color:#dde;margin-bottom:32px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:4px;font-weight:700;font-size:15px}
+.btn.red{background:var(--accent);color:#fff}
+.btn.line{border:2px solid #fff;color:#fff}
+.btn.ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);color:#fff}
+
+/* section */
+section{padding:88px 0}
+.st{text-align:center;margin-bottom:48px}
+.st .en{display:block;color:var(--accent);font-size:14px;font-weight:700;letter-spacing:.3em}
+.st h2{font-size:clamp(24px,4vw,34px);font-weight:900}
+
+/* worries */
+.worries{background:var(--white)}
+.wgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.wcard{border:1px solid var(--line);border-radius:8px;padding:24px;display:flex;gap:12px;align-items:flex-start;font-weight:500}
+.wcard i{flex:none;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;font-style:normal;display:grid;place-items:center;font-size:14px}
+.answer{margin-top:40px;text-align:center;font-size:20px;font-weight:900}
+.answer span{background:linear-gradient(transparent 60%,#f9d978 60%)}
+
+/* services */
+.sgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+@media(max-width:760px){.sgrid{grid-template-columns:1fr}}
+.scard{background:var(--white);border-radius:8px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.05)}
+.scard .ph{aspect-ratio:16/10}
+.scard div.b{padding:22px}
+.scard .num{font-family:Oswald;color:var(--accent);font-size:13px;letter-spacing:.2em}
+.scard h3{font-size:19px;margin:2px 0 8px}
+.scard p{font-size:14px;color:var(--muted)}
+
+/* works */
+.works{background:var(--ink);color:#fff}
+.works .st h2{color:#fff}
+.ba{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}
+.bacard{background:var(--ink2);border-radius:8px;overflow:hidden}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.pair .ph{aspect-ratio:1/1;position:relative}
+.pair .ph::after{content:attr(data-l);position:absolute;left:8px;top:8px;font:700 11px Oswald;letter-spacing:.15em;padding:2px 8px;background:rgba(0,0,0,.6)}
+.pair .ph.af::after{background:var(--accent)}
+.bacard .b{padding:16px 18px;font-size:14px}
+.bacard .b strong{display:block;font-size:16px;margin-bottom:2px}
+.bacard .b span{color:#aab}
+.igmore{text-align:center;margin-top:40px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.gal .ph{aspect-ratio:1/1;border-radius:4px}
+@media(max-width:760px){.gal{grid-template-columns:repeat(2,1fr)}}
+.cert{display:flex;gap:16px;align-items:center;margin-top:20px;padding:16px;border:2px solid var(--accent2);border-radius:8px;background:#fffbef}
+.cert .ph{width:84px;flex:none;aspect-ratio:4/5;border-radius:4px}
+.cert strong{display:block;font-size:15px}
+.cert span{font-size:13px;color:var(--muted)}
+
+/* flow */
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;counter-reset:f}
+.fstep{background:var(--white);border-radius:8px;padding:26px 22px;position:relative}
+.fstep::before{counter-increment:f;content:"0" counter(f);font:700 34px Oswald;color:var(--accent);opacity:.9;display:block;line-height:1}
+.fstep h3{font-size:17px;margin:10px 0 6px}
+.fstep p{font-size:14px;color:var(--muted)}
+
+/* about */
+.about{background:var(--white)}
+.agrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.agrid .ph{aspect-ratio:4/3;border-radius:8px}
+.about h3{font-size:24px;font-weight:900;margin-bottom:16px;line-height:1.5}
+.about p{color:var(--ink2);margin-bottom:12px}
+@media(max-width:760px){.agrid{grid-template-columns:1fr;gap:28px}}
+
+/* info */
+.info table{width:100%;border-collapse:collapse;background:var(--white);border-radius:8px;overflow:hidden}
+.info th,.info td{padding:16px 20px;border-bottom:1px solid var(--line);text-align:left;font-size:15px;vertical-align:top}
+.info th{width:30%;background:#efede8;font-weight:700}
+.map{margin-top:24px;border-radius:8px;overflow:hidden;aspect-ratio:16/7;background:#ddd}
+.map iframe{width:100%;height:100%;border:0}
+.todo{color:var(--accent);font-size:12px;font-weight:700}
+
+/* cta */
+.cta{background:var(--accent);color:#fff;text-align:center}
+.cta h2{font-size:clamp(24px,4vw,34px);font-weight:900;margin-bottom:10px}
+.cta p{margin-bottom:28px}
+.cta .tel{font:700 clamp(32px,6vw,48px) Oswald;letter-spacing:.05em;display:block;margin-bottom:6px}
+.cta .btns{justify-content:center}
+.cta .btn.line{border-color:#fff}
+
+footer{background:#0e0f12;color:#889;text-align:center;font-size:12px;padding:28px 16px}
+
+/* mobile fixed bar */
+.mbar{display:none}
+@media(max-width:760px){
+  section{padding:64px 0}
+  .hero{min-height:520px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:20}
+  .mbar a{padding:14px;text-align:center;font-weight:700;color:#fff;font-size:14px}
+  .mbar a:first-child{background:var(--accent)}
+  .mbar a:last-child{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}
+  footer{padding-bottom:80px}
+  .hcall{display:none}
+}
+@media print{header,.mbar{position:static}.mbar{display:none}section{padding:56px 0}}
+</style>
+</head>
+<body>
+
+<div class="demo">※ ご提案用のデモサイトです（写真はInstagramより。電話番号・営業時間などは仮のものです）</div>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="logo"><span class="en">AUTO CRAFT <b>KUMAKIRI</b></span><small>オートクラフトクマキリ</small></a>
+    <nav>
+      <a href="#service">サービス</a><a href="#works">施工事例</a><a href="#flow">ご依頼の流れ</a><a href="#info">店舗情報</a>
+    </nav>
+    <a href="#contact" class="hcall">無料見積もり</a>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="ph"></div>
+  <div class="wrap">
+    <div class="tag">静岡市葵区竜南｜板金塗装</div>
+    <h1>そのキズ・ヘコミ、<br><span>元どおり</span>に直します。</h1>
+    <p>小さなこすりキズから事故の修理まで。<br>一台一台、手作業でていねいに仕上げる、地域の板金塗装店です。</p>
+    <div class="btns">
+      <a href="#contact" class="btn red">無料で見積もりを相談する</a>
+      <a href="#works" class="btn line">施工事例を見る</a>
+    </div>
+  </div>
+</section>
+
+<section class="worries">
+  <div class="wrap">
+    <div class="st"><span class="en">WORRIES</span><h2>こんなお悩みありませんか？</h2></div>
+    <div class="wgrid">
+      <div class="wcard"><i>✓</i>駐車場でバンパーをこすってしまった</div>
+      <div class="wcard"><i>✓</i>ドアに小さなヘコミがあって気になる</div>
+      <div class="wcard"><i>✓</i>修理代がいくらかかるか不安</div>
+      <div class="wcard"><i>✓</i>ディーラーより安く、きれいに直したい</div>
+    </div>
+    <p class="answer"><span>まずは写真を送るだけでOK。お気軽にご相談ください。</span></p>
+  </div>
+</section>
+
+<section id="service">
+  <div class="wrap">
+    <div class="st"><span class="en">SERVICE</span><h2>サービス内容</h2></div>
+    <div class="sgrid">
+      <div class="scard"><div class="ph" style="background-image:url(images/service1.jpg),linear-gradient(135deg,#4a505b,#2a2e36)"></div>
+        <div class="b"><div class="num">01</div><h3>板金修理</h3><p>ヘコミや歪みを、パネルを交換せずに叩き出して修正。費用を抑えて元の形に戻します。</p></div></div>
+      <div class="scard"><div class="ph" style="background-image:url(images/service2.jpg),linear-gradient(135deg,#6b3a30,#2a2e36)"></div>
+        <div class="b"><div class="num">02</div><h3>塗装</h3><p>ボディカラーに合わせて色を調合。補修したところが目立たない、自然な仕上がりを目指します。</p></div></div>
+      <div class="scard"><div class="ph" style="background-image:url(images/service3.jpg),linear-gradient(135deg,#3b4a5e,#2a2e36)"></div>
+        <div class="b"><div class="num">03</div><h3>キズ・バンパー修理</h3><p>こすりキズ、バンパーの割れ・へこみなど、身近なトラブルもお任せください。</p></div></div>
+      <div class="scard"><div class="ph" style="background-image:url(images/service4.jpg),linear-gradient(135deg,#55503a,#2a2e36)"></div>
+        <div class="b"><div class="num">04</div><h3>事故修理</h3><p>事故で損傷したお車の修理もご相談ください。保険を使う場合の進め方もご案内します。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="works" id="works">
+  <div class="wrap">
+    <div class="st"><span class="en">WORKS</span><h2>施工事例</h2></div>
+    <div class="gal">
+      <div class="ph" style="background-image:url(images/work1.jpg)"></div>
+      <div class="ph" style="background-image:url(images/work2.jpg)"></div>
+      <div class="ph" style="background-image:url(images/work3.jpg)"></div>
+      <div class="ph" style="background-image:url(images/work4.jpg)"></div>
+      <div class="ph" style="background-image:url(images/work5.jpg)"></div>
+      <div class="ph" style="background-image:url(images/work6.jpg)"></div>
+      <div class="ph" style="background-image:url(images/work7.jpg)"></div>
+      <div class="ph" style="background-image:url(images/work8.jpg)"></div>
+    </div>
+    <div class="igmore"><a href="https://www.instagram.com/autocraft_kumakiri/" target="_blank" rel="noopener" class="btn ig">Instagramでもっと見る</a></div>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="wrap">
+    <div class="st"><span class="en">FLOW</span><h2>ご依頼の流れ</h2></div>
+    <div class="flow">
+      <div class="fstep"><h3>ご相談</h3><p>お電話・InstagramのDMで。キズの写真を送っていただくとスムーズです。</p></div>
+      <div class="fstep"><h3>お見積もり</h3><p>お車を拝見して、修理内容と費用をわかりやすくご説明します。</p></div>
+      <div class="fstep"><h3>修理・塗装</h3><p>ご納得いただいてから作業開始。一台ずつていねいに仕上げます。</p></div>
+      <div class="fstep"><h3>お引き渡し</h3><p>仕上がりを一緒に確認していただき、お引き渡しとなります。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap agrid">
+    <div class="ph" style="background-image:url(images/shop.jpg),linear-gradient(135deg,#4a505b,#1d2026)"></div>
+    <div>
+      <div class="st" style="text-align:left;margin-bottom:16px"><span class="en">ABOUT</span></div>
+      <h3>お客様の大切な一台を、<br>自分の車のように。</h3>
+      <p>オートクラフトクマキリは、静岡市葵区竜南の板金塗装店です。</p>
+      <p>「どれくらいで直る？」「いくらかかる？」といった素朴な疑問にも、ひとつずつ丁寧にお答えします。小さなキズでも遠慮なくご相談ください。</p>
+      <div class="cert"><div class="ph" style="background-image:url(images/cert.webp)"></div>
+        <div><strong>中部運輸局長認証 特定整備事業場</strong><span>国の認証を受けた工場で、安心してお任せいただけます。</span></div></div>
+      <p class="todo" style="margin-top:12px">※ 代表者のごあいさつ・こだわりなどはヒアリングして差し替えます</p>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="info">
+  <div class="wrap">
+    <div class="st"><span class="en">INFORMATION</span><h2>店舗情報</h2></div>
+    <table>
+      <tr><th>店名</th><td>オートクラフトクマキリ</td></tr>
+      <tr><th>所在地</th><td>静岡県静岡市葵区竜南1-17-24</td></tr>
+      <tr><th>認証</th><td>中部運輸局長認証 特定整備事業場</td></tr>
+      <tr><th>Instagram</th><td><a href="https://www.instagram.com/autocraft_kumakiri/" target="_blank" rel="noopener" style="color:var(--accent);font-weight:700">@autocraft_kumakiri</a></td></tr>
+      <tr><th>電話番号</th><td>054-000-0000 <span class="todo">（仮）</span></td></tr>
+      <tr><th>営業時間</th><td>9:00〜18:00 <span class="todo">（仮）</span></td></tr>
+      <tr><th>定休日</th><td>日曜・祝日 <span class="todo">（仮）</span></td></tr>
+      <tr><th>業務内容</th><td>板金修理／塗装／キズ・バンパー修理／事故修理</td></tr>
+    </table>
+    <div class="map"><iframe loading="lazy" src="https://www.google.com/maps?q=%E9%9D%99%E5%B2%A1%E5%B8%82%E8%91%B5%E5%8C%BA%E7%AB%9C%E5%8D%97&output=embed" title="地図"></iframe></div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <h2>お見積もり・ご相談は無料です</h2>
+    <p>キズの写真をDMで送っていただくだけでも大丈夫です。</p>
+    <a href="tel:0540000000" class="tel">054-000-0000</a>
+    <p style="font-size:13px;margin-bottom:24px">受付 9:00〜18:00（仮）</p>
+    <div class="btns">
+      <a href="https://ig.me/m/autocraft_kumakiri" target="_blank" rel="noopener" class="btn line">InstagramのDMで相談する</a>
+    </div>
+  </div>
+</section>
+
+<footer>© オートクラフトクマキリ｜静岡市葵区竜南の板金塗装</footer>
+
+<div class="mbar"><a href="tel:0540000000">電話で相談</a><a href="https://ig.me/m/autocraft_kumakiri" target="_blank" rel="noopener">DMで相談</a></div>
+</body>
+</html>
